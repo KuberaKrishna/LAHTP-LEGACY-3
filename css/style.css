@@ -1,0 +1,227 @@
+/*  FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Google Sans Flex", sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #202020;
+}
+nav{
+    padding: 14px 44px;
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    background-color: #9E9E9E;
+}
+ul{
+    list-style: none;
+}
+/* ASIDE */
+.clap-board{
+   position: fixed;
+   top: 40vh;
+   display: none;
+   z-index: 2;
+}
+.show-clap-board{
+   display: block;
+}
+.clap-board ul{
+   text-decoration: overline;   
+}
+.inset-board ul li{
+    margin-top: 5px;
+}
+.inset-board{
+   display: flex;
+   align-items: center;
+   width: 300px;
+   height: 240px;
+   background-color: #000;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   box-shadow: 12px 5px 30px -17px #E0E0E0;
+}
+.static-clap, .dynamic-clap{
+   width: 310px;
+   height: 40px;
+   background-color: #000;
+   display: flex;
+   justify-content: space-around;
+   box-shadow: 0px 0px 10px 0px #E0E0E0;
+}
+.marking{
+ background-color: white;  
+ height: 100%;
+ width: 25px;
+}
+.static-clap-marking{
+   transform: skew(-40deg);
+}
+.dynamic-clap-marking{
+   transform: skew(40deg);
+}
+.dynamic-clap{
+    z-index: -1;
+    transform: rotate(163deg);
+    position: absolute;
+    top: -75px;
+    width: 320px;
+    left: -10px;
+}
+.take{
+    padding: 10px 16px;
+    position: fixed;
+    top: 55vh;
+    border-radius: 5px;
+    z-index: 2;
+    margin-left: 4px;
+    animation-duration: 2s;
+    animation-name : btnBgGlow;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+@keyframes btnBgGlow {
+    50%{
+        box-shadow: 0px 0px 10px 1px #E0E0E0;
+    }
+}
+.btn-transform{
+   left: 16%;
+}
+/* NAV  */
+nav .mid-section{
+    display: flex;
+    width: 223px;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .mid-section a:link{
+    color: #fff;
+}
+nav .mid-section a:hover{
+    color: rgb(111, 111, 111)
+}
+
+/* MAIN */
+.container{
+    max-width: 1406px;
+    margin: auto;
+    z-index: 1;
+    position: relative;
+}
+.heading{
+    text-align: center;
+    margin-top: 20px;
+}
+.movie-container{
+    display: grid;
+    grid-template-columns: 670px 1fr;
+    margin-top: 69px;
+}
+.poster{
+    width: 100%;
+    height: 700px;
+    object-fit: contain;
+    align-self: center;
+}
+.movie-info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.movie-plot{
+    line-height: 1.64;
+}
+.comment-section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 690px);
+    column-gap: 40px;
+}
+.form-comment{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.author{
+    background-color: transparent;
+    border: 1px solid #8f8f9d;
+    padding: 7px;
+}
+.comment{
+    border: 1px solid #8f8f9d;
+    outline: none;
+    background-color: transparent;
+    height: 400px;
+    resize: none;
+    padding: 10px 12px;
+    margin-top: 10px;
+}
+.post{
+    color: #000;
+}
+.post:hover{
+    opacity: .7;
+}
+.r-container{
+    margin-top: 10px;
+    align-self: end;
+    overflow: auto;
+    width: 100%;
+    height: 400px;
+    border: 1px solid #8f8f9d;
+    padding: 5px 15px;
+}
+.r-authorname{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+ .r-comment{
+    line-height: 1.46;
+ }
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+.social-links{
+    height: 120px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #8f8f9d;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.link-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+.certificate{
+    margin-top: 10px;    
+    display: flex;
+    gap: 4px;
+}
+.certificate p{
+    font-size: 13px;
+}
