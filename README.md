@@ -9,7 +9,7 @@
 ## SETTING UP DATABASE ENVIRONMENT
 * To create user in adminer, use sql/adminer-user.sql
 * To create DB in adminer, use sql/adminer-sql.sql
-* To create user in phpmyadmin, use sql/phpmyadmin-user.sql
+* To create user in phpmyadmin, use sql/phpmyadminuser.sql
 * To create DB in phpmyadmin, use sql/phpmyadmin-sql.sql
 ## STORED XSS
 ### Information Gathering
