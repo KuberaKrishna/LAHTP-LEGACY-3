@@ -17,6 +17,8 @@ if(is_dir("$_SERVER[DOCUMENT_ROOT]/../configuration/") === FALSE){
     file_put_contents($_config_file_path, $_config_file);
     $_config = file_get_contents($_config_file_path);
 } else {
+    $_config_file = file_get_contents("configuration/movieReviewConfig.json");
+    file_put_contents($_config_file_path, $_config_file);
     $_config = file_get_contents($_config_file_path);
 }
 function getConfig($key){
